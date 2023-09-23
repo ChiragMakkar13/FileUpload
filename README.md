@@ -65,6 +65,7 @@ Before you begin, ensure you have the following software installed:
    ```bash
    node app.js
    ```
+**Note- Recommended Version of Node is v18.18.0 or Higher**
 
 ## Usage
 
