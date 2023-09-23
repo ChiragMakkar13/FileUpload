@@ -1,0 +1,19 @@
+{
+  "name": "fileupload",
+  "version": "1.0.0",
+  "description": "File Upload to MongoDB with Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiragMakkar13/FileUpload.git"
+  },
+  "author": "Chirag Makkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChiragMakkar13/FileUpload/issues"
+  },
+  "homepage": "https://github.com/ChiragMakkar13/FileUpload#readme"
+}
