@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload</title>
+</head>
+<body>
+  <h1>Upload a PDF File</h1>
+  <form action="http://127.0.0.1:3000/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="pdf" accept=".pdf">
+    <button type="submit">Upload</button>
+  </form>
+
+  <h1>Uploaded Files</h1>
+    
+  <!-- Display a list of uploaded files -->
+  <ul id="fileList"></ul>
+
+  <!-- JavaScript to populate the list of files -->
+  <script>
+      fetch('/files')
+          .then(response => response.json())
+          .then(files => {
+              const fileList = document.getElementById('fileList');
+              files.forEach(file => {
+                  const listItem = document.createElement('li');
+                  const fileLink = document.createElement('a');
+                  fileLink.href = `/files/${file._id}`;
+                  fileLink.textContent = file.name;
+                  listItem.appendChild(fileLink);
+                  fileList.appendChild(listItem);
+              });
+          })
+          .catch(error => {
+              console.error('Error fetching file list:', error);
+          });
+  </script>
+</body>
+</html>
