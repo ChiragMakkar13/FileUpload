@@ -24,9 +24,6 @@ db.once('open', () => console.log('Connected to MongoDB'));
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
-// Serve static files from the "uploads" folder
-app.use('/uploads', express.static('uploads'));
-
 // Route for uploading a PDF file
 app.post('/upload', upload.single('pdf'), async (req, res) => {
   try {
