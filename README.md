@@ -72,6 +72,7 @@ Before you begin, ensure you have the following software installed:
 To upload a PDF file to MongoDB using this application:
 
 Via Web Browser:
+
 1.Start your Node.js server by running node app.js.
 
 <img width="455" alt="image" src="https://github.com/ChiragMakkar13/FileUpload/assets/48089886/0d00c417-cd08-42c1-b0ce-e9762de59a46">
