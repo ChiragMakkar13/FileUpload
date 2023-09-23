@@ -53,7 +53,7 @@ Before you begin, ensure you have the following software installed:
 3. Install the dependencies:
 
    ```bash
-   npm install
+   npm install express mongoose multer
    ```
 
 4. Configure your MongoDB connection:
