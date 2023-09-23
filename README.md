@@ -47,7 +47,7 @@ Before you begin, ensure you have the following software installed:
 2. Navigate to the project folder:
 
    ```bash
-   cd your-repo
+   cd FileUpload
    ```
 
 3. Install the dependencies:
